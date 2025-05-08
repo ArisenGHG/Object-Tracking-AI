@@ -69,7 +69,7 @@ uv sync --group yolo
 ### 🔹 Videoverfolgung
 
 ```bash
-python tracking/track.py --source "Traffic.mp4" --yolo-model yolov8n.pt --tracking-method bytetrack --project "D:/TrackingErgebnisse" --name "video1" --save
+python tracking/track.py --source "dein_video.mp4" --yolo-model yolov8n.pt --tracking-method bytetrack --project "D:/dein_speicherort" --name "Ergebniss " --save
 ```
 
 ### 🔹 Webcam
@@ -81,7 +81,7 @@ python tracking/track.py --source 0 --yolo-model yolov8n.pt --tracking-method by
 ### 🔹 Nur Fahrzeuge erkennen (Autos, Busse, LKWs)
 
 ```bash
-python tracking/track.py --source "video.mp4" --yolo-model yolov8n.pt --tracking-method bytetrack --classes 2 5 7 --save
+python tracking/track.py --source "dein_video.mp4" --yolo-model yolov8n.pt --tracking-method bytetrack --classes 2 5 7 --save
 ```
 
 > COCO-Klassen:
@@ -113,7 +113,7 @@ Inhalt:
 Du kannst eine einfache grafische Oberfläche nutzen:
 
 ```bash
-python boxmot_gui_tkinter.py
+python boxmot_gui.py
 ```
 
 Funktionen:
@@ -171,10 +171,3 @@ Anpassung & GUI-Integration durch [ArisenGHG](https://github.com/ArisenGHG).
 Grundlage: BoxMOT (Mikel Brostrom) + YOLOv8 (Ultralytics)
 
 ---
-
-```
-
----
-
-Wenn du willst, kann ich dir zusätzlich einen Screenshot einbauen (GUI-Vorschau oder Ergebnisvideo). Möchtest du das?
-```
